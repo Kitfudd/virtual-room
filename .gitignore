@@ -1,0 +1,50 @@
+# Dependencies
+node_modules/
+
+# Build output and generated files
+build/
+dist/
+.react-router/
+*.tsbuildinfo
+
+# Generated 3D assets (produced by the asset pipeline from art/)
+public/models/
+
+# Test output
+coverage/
+playwright-report/
+test-results/
+blob-report/
+
+# Caches
+.cache/
+.eslintcache
+.vite/
+.wrangler/
+
+# Environment and secrets (commit only the example file)
+.env
+.env.*
+!.env.example
+
+# Logs
+*.log
+npm-debug.log*
+
+# Blender backups and temporary saves
+*.blend[0-9]*
+*.blend@
+
+# Private reference material (never commit)
+art/reference/
+
+# Editors: share only the project's VS Code settings and extension list
+.vscode/*
+!.vscode/extensions.json
+!.vscode/settings.json
+.idea/
+
+# Operating systems
+.DS_Store
+Thumbs.db
+desktop.ini

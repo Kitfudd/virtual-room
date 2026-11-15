@@ -1,0 +1,35 @@
+Creative Content - All Rights Reserved
+
+Copyright (c) 2026 Kitfudd.
+
+The source code in this repository is licensed under the MIT license (see
+LICENSE). That license does not cover the creative content described below,
+which remains the exclusive property of the copyright holder.
+
+Content covered by this notice
+
+  - Everything under art/ (Blender files, textures, paintings, sketches and
+    other art sources)
+  - 3D models, textures and images generated from those sources, including
+    files under public/models/
+  - Everything under content/ (written posts, project write-ups, the reading
+    and movie log, photographs and their captions)
+  - The résumé, logos, branding, and any other image,
+    audio or video file in this repository
+  - The design of the room and of the characters in it, including the cat
+
+Shader source code (GLSL, TSL) and the scripts that generate or process
+assets are code, and are covered by the MIT license.
+
+What you may do
+
+You may view this content on the website and in this repository, and link to
+it. Quoting short excerpts with attribution, as allowed by applicable law
+(for example fair use or fair dealing), is fine.
+
+What you may not do without written permission
+
+Copy, redistribute, modify, sell, or use the content in other works,
+including training datasets, templates or products.
+
+Permission requests: hello@kitfud.com
