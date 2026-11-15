@@ -2,7 +2,7 @@
 
 This project is a personal website presented as an interactive, isometric 3D model of my room. You can interact with the various objects scattered about the room to access different parts of my portfolio. Every page is also viewable through a traditional flat 2D site.
 
-> **Status:** Phase 0 (Discovery & Setup). Planning documents are in place, working on scaffolding the app next. See [`docs/plan/phase-0.md`](docs/plan/phase-0.md).
+> **Status:** Phase 0 (Discovery & Setup). Planning documents are in place, working on scaffolding the app next.
 
 ## Stack
 

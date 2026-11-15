@@ -1,6 +1,6 @@
 # Contributing
 
-This is a personal project with one developer. Bug reports are welcome as [GitHub issues](https://github.com/Kitfudd/kitfud-room/issues), but feature pull requests aren't accepted since the room and its content are personal. The rest of this document will describe the working agreement the project follows, partially for my own reference.
+This is a personal project with one developer. Bug reports are welcome as [GitHub issues](https://github.com/Kitfudd/virtual-room/issues), but feature pull requests aren't accepted since the room and its content are personal. The rest of this document will describe the working agreement the project follows, partially for my own reference.
 
 ## Branches
 

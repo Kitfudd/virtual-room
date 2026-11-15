@@ -180,7 +180,7 @@ The three gates are the checkpoints to re-plan at. Everything after v1.0 is open
 ### Phase 0: Discovery & setup (~2 weeks)
 
 - **Goals:** decide what the site is for and set up the workspace the way a studio would.
-- **Deliverables:** product brief, requirements, sitemap and flows, interactable map, art direction, workstation setup, the repository with conventions, the project board, ADRs, and a CI/CD walking skeleton. Detailed in the [Phase 0 plan](phase-0.md).
+- **Deliverables:** product brief, requirements, sitemap and flows, interactable map, art direction, workstation setup, the repository with conventions, the project board, ADRs, and a CI/CD walking skeleton.
 - **Exit criteria:** a pull request gets a green CI run and a preview URL, and Sprint 1 is planned.
 
 ### Phase 1: Vertical slice (~4 weeks)
@@ -211,7 +211,7 @@ The three gates are the checkpoints to re-plan at. Everything after v1.0 is open
 
 - **Goals:** make it feel finished on every device.
 - **Deliverables:** post-processing (shader #10); low-end and phone fallbacks; device-tier detection; cross-browser testing (Chrome, Edge, Firefox, Safari, iOS, Android); an accessibility audit; 3-5 people testing it while the author watches silently.
-- **Exit criteria:** every [Quality](#quality-performance-accessibility-seo) checklist item passes; no open P1 bugs.
+- **Exit criteria:** every [non-functional requirement](../product/requirements.md#non-functional-requirements) is met; no open P1 bugs.
 
 ### Phase 6: Launch v1.0 (~1 week)
 
