@@ -1,0 +1,41 @@
+name: Shader
+description: An effect from the rendering and shader track
+title: "feat(shaders): "
+labels: ["shader"]
+body:
+  - type: input
+    id: track
+    attributes:
+      label: Shader track number
+      description: From the shader track in docs/plan/development-plan.md.
+      placeholder: "#2 hover highlight"
+    validations:
+      required: true
+  - type: textarea
+    id: goal
+    attributes:
+      label: Goal and concept it teaches
+    validations:
+      required: true
+  - type: input
+    id: spec
+    attributes:
+      label: Spec
+      description: Link to the one-page spec, which is required for anything larger than S.
+  - type: input
+    id: cost
+    attributes:
+      label: Cost target
+      description: Cost is measured on the reference laptop (Radeon 780M).
+      placeholder: "≤ 0.5 ms per frame, +1 draw call"
+    validations:
+      required: true
+  - type: textarea
+    id: acceptance
+    attributes:
+      label: Acceptance criteria
+      value: |
+        - [ ] Sandbox page at /lab/<effect> with live controls
+        - [ ] Cost measured and within target
+        - [ ] Breakdown post drafted
+        - [ ]

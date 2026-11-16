@@ -1,0 +1,32 @@
+name: Feature
+description: New behavior in the site
+title: "feat: "
+labels: ["feature"]
+body:
+  - type: input
+    id: requirement
+    attributes:
+      label: Requirement
+      description: The feature ID from docs/product/requirements.md, if there is one.
+      placeholder: R3
+  - type: textarea
+    id: story
+    attributes:
+      label: User story
+      placeholder: As a recruiter, I can reach the resume in two clicks from any page.
+    validations:
+      required: true
+  - type: textarea
+    id: acceptance
+    attributes:
+      label: Acceptance criteria
+      description: Must be testable and verifiable.
+      value: |
+        - [ ]
+    validations:
+      required: true
+  - type: textarea
+    id: notes
+    attributes:
+      label: Notes
+      description: Approach, links to a spec, open questions, etc..
