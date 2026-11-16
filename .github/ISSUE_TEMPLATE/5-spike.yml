@@ -1,0 +1,26 @@
+name: Spike
+description: A time-boxed investigation that answers a question
+title: "spike: "
+labels: ["spike"]
+body:
+  - type: textarea
+    id: question
+    attributes:
+      label: Question
+      description: What this spike addresses and the decision it unblocks.
+    validations:
+      required: true
+  - type: input
+    id: timebox
+    attributes:
+      label: Time box
+      placeholder: 2 hours
+    validations:
+      required: true
+  - type: textarea
+    id: output
+    attributes:
+      label: Expected output
+      description: A comment with findings, an ADR, a prototype branch, or follow-up issues.
+    validations:
+      required: true

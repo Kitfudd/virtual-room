@@ -1,0 +1,57 @@
+name: Asset
+description: A model, texture, or bake for the room
+title: "art: "
+labels: ["asset"]
+body:
+  - type: input
+    id: object
+    attributes:
+      label: Object
+      description: The object as named in docs/art/room-and-interactables.md.
+      placeholder: Bookshelf
+    validations:
+      required: true
+  - type: dropdown
+    id: stage
+    attributes:
+      label: Stage
+      options:
+        - Greybox
+        - Model and UVs
+        - Texture
+        - Bake
+        - Rig and animation
+    validations:
+      required: true
+  - type: textarea
+    id: requirements
+    attributes:
+      label: Model requirements
+      description: Separate parts, pivots, UV channels, shape keys, COL_ proxy; see the asset notes.
+    validations:
+      required: true
+  - type: input
+    id: tris
+    attributes:
+      label: Triangle budget
+      placeholder: "2,000"
+    validations:
+      required: true
+  - type: input
+    id: textures
+    attributes:
+      label: Texture budget
+      placeholder: 512 px, shared props atlas
+    validations:
+      required: true
+  - type: textarea
+    id: acceptance
+    attributes:
+      label: Acceptance criteria
+      value: |
+        - [ ] Exports through the pipeline script with no validator errors
+        - [ ] Within the budgets above
+        - [ ]
+  - type: markdown
+    attributes:
+      value: Describe reference material in words. Avoid attaching personal photos, as they belong in the private art/reference/ folder instead.

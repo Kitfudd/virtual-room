@@ -31,6 +31,29 @@ Commit messages will follow [Conventional Commits](https://www.conventionalcommi
 
 Examples: `feat(room): open /projects from the monitor`, `art(bookshelf): bake daylight lightmap`, `docs: add ADR 0007 hosting`.
 
+## Planning and sprints
+
+Work is tracked on a GitHub Project board. The workflow automatically adds issues in this repository to the board.
+
+- **Issues:** features, bugs, assets, shaders, and spikes use the issue forms. Docs and chore work can be plain issues with the `docs` or `chore` label.
+- **Board columns:** Backlog → Ready → In progress → In review → Done.
+- **Fields:** Size (S under 2 hours, M half a day to a day, L several days and gets split), Priority (P0 now, P1 this phase, P2 later), and the sprint.
+- **Sprints:** two weeks long starting on Mondays (Sprint 0 began 2026-11-16). The first day is for planning, which involves picking a sprint goal and pulling Ready issues into the sprint. The last day is for the demo, a short devlog post, and a retro (what went well, what didn't, and one thing to change).
+
+**Checklist for the Ready status:**
+
+1. Acceptance criteria are written and testable
+2. It has a size, and anything L is split
+3. Open questions become a spike first
+4. Interactables and shaders larger than S have a one-page spec
+
+**Checklist for the Done status:**
+
+1. Merged into `main` through a squash-merged PR that links the issue
+2. CI checks pass (once they exist) including performance budgets
+3. Deployed to the preview and checked there
+4. Docs updated where behavior or decisions changed
+
 ## Releases
 
 - Versions follow [Semantic Versioning](https://semver.org/) and are tagged `vMAJOR.MINOR.PATCH` on `main`.

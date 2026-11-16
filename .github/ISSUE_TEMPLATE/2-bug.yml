@@ -1,0 +1,32 @@
+name: Bug
+description: Something on the site or in the room doesn't work as intended
+title: "fix: "
+labels: ["bug"]
+body:
+  - type: textarea
+    id: what
+    attributes:
+      label: What happened
+      description: What was expected, and what happened instead.
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to reproduce
+      value: |
+        1.
+    validations:
+      required: true
+  - type: input
+    id: environment
+    attributes:
+      label: Environment
+      description: Page URL, browser, version, OS, device, GPU, etc.
+      placeholder: /projects, Firefox 147, Windows 11, Radeon 780M
+    validations:
+      required: true
+  - type: textarea
+    id: evidence
+    attributes:
+      label: Screenshots or console output
