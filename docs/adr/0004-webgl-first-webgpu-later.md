@@ -6,7 +6,7 @@ Accepted (2026-11-11)
 
 ## Context
 
-three.js offers two renderers. `WebGLRenderer` with GLSL `ShaderMaterial` is stable, and most shader learning material is written in GLSL, which maps closely to the HLSL used in Unity and Unreal. `WebGPURenderer`, three.js's node-based shading language compiled to WGSL/GLSL, became the recommended renderer in three.js r182 and falls back to WebGL 2 automatically. Its APIs are still changing, and R3F's WebGPU-first major version is in alpha.
+three.js offers two renderers. `WebGLRenderer` with GLSL `ShaderMaterial` is stable, and most shader learning material is written in GLSL, which maps closely to the HLSL used in Unity and Unreal. `WebGPURenderer`, with shaders written in TSL (three.js's node-based shading language, compiled to WGSL or GLSL), became the recommended renderer in three.js r182 and falls back to WebGL 2 automatically. Its APIs are still changing, and R3F's WebGPU-first major version is in alpha.
 
 ## Decision
 
