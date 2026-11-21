@@ -18,7 +18,7 @@ We will use GSAP for camera transitions, interaction feedback, UI transitions, a
 
 ## Consequences
 
-- Subscribe to change and read per frame without rendering as a rule for scene change code.
+- Subscribe to change and read per frame without rendering as a rule for scene code.
 - Store shapes become an architectural contract, documented in `docs/architecture.md`.
 - GSAP's license is free but proprietary (not open source) and can be changed by Webflow, which is acceptable for a personal site.
 - `prefers-reduced-motion` handling lives in one place, around GSAP timelines and camera moves.
