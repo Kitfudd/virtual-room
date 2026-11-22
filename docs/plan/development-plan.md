@@ -1,6 +1,6 @@
 # Development plan
 
-**Last revised:** 2026-11-14 (living document).
+**Last revised:** 2026-11-22 (living document).
 
 ## Tech stack and architecture
 
@@ -47,33 +47,9 @@ The room canvas links to the content pages but does not contain them, so the sit
 
 React Router v8 requires Node 22.22+, React 19.2.7+ and Vite 7 or newer ([release notes](https://remix.run/blog/react-router-v8)); the pinned versions satisfy all three.
 
-### How navigation works
+### Architecture
 
-1. Every route (`/`, `/projects`, `/projects/:slug`, `/devlog/:slug` and so on) is prerendered to HTML at build time. The list of paths comes from the content index.
-2. The root layout holds the 2D nav and a lazy-loaded (`React.lazy`) room canvas. Visiting `/` loads three.js and the GLB behind a progress indicator. Someone who lands directly on a project page never downloads them.
-3. Hovering an interactable highlights it and shows a label. Clicking runs a short GSAP camera move, then calls `navigate('/projects')`.
-4. After leaving the room, the canvas stays mounted but hidden and paused (`frameloop="never"`). Camera state stays in Zustand, so "Back to room" is instant.
-5. Zustand holds the state the DOM and the scene share.
-
-More detail is in [Sitemap and visitor flows](../ux/sitemap-and-flows.md).
-
-### Repository layout
-
-A single application repository.
-
-```
-app/                 React Router app: root.tsx, routes.ts, routes/, components/
-app/scene/           R3F canvas, room, interactables, camera rig, the cat
-app/shaders/         GLSL (later TSL) and /lab sandbox components
-app/store/           Zustand stores
-app/content/         Content loader and Zod schemas
-content/             MDX: projects/, devlog/, photos/, lab/, log/, pages/
-public/models/       Generated GLBs (pipeline output, not committed)
-art/                 .blend and texture sources (Git LFS); art/reference/ is private and ignored
-tools/               Blender Python add-on, gltf-transform scripts
-docs/                Product, UX, art and planning documents, ADRs
-react-router.config.ts, vite.config.ts
-```
+Module boundaries, routes, the room canvas at runtime, state, as well as the content, asset and deployment pipelines, are described in [Architecture](../architecture.md).
 
 ## Art and asset pipeline
 
