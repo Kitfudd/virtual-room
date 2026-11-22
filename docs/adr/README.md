@@ -14,3 +14,4 @@ Each significant technical decision is recorded here as a short ADR in the [Nyga
 | [0004](0004-webgl-first-webgpu-later.md) | WebGL and GLSL for now, then WebGPU and TSL later | Accepted |
 | [0005](0005-zustand-and-gsap.md) | Zustand for shared state and GSAP for animation | Accepted |
 | [0006](0006-mdx-content-with-zod.md) | Content as MDX with Zod-validated frontmatter | Accepted |
+| [0007](0007-cloudflare-workers-hosting.md) | Cloudflare Workers static assets for hosting | Accepted |

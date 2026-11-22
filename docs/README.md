@@ -12,7 +12,7 @@ The documents and deliverables created for this project. Each item has a status/
 | [Art direction](art/art-direction.md) | The look, references, style pillars, palettes, how the look is built | 2026-11-15 |
 | [Workstation setup](setup.md) | Tooling, versions, reference devices, accounts | 2026-11-13 |
 | [Development plan](plan/development-plan.md) | Architecture, asset pipeline, shader track, roadmap, practices, quality, risks | 2026-11-14 |
-| [Architecture decision records](adr/README.md) | ADRs 0001–0006: the decisions behind the stack describing the context and consequences | 2026-11-17 |
+| [Architecture decision records](adr/README.md) | ADRs 0001–0007: the decisions behind the stack describing the context and consequences | 2026-11-21 |
 
 ## Conventions
 

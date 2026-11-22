@@ -43,7 +43,7 @@ The room canvas links to the content pages but does not contain them, so the sit
 | Debug and profiling | leva, r3f-perf, Spector.js, browser GPU tools | Live-tweak shader uniforms; count draw calls and memory | Dev-only panels |
 | Testing | Vitest, Playwright | Visual regression on the canvas | CI |
 | Package manager | npm | One less tool to install and keep in sync, as it comes automatically with Node | `package-lock.json` committed; `npm ci` in CI |
-| Hosting | Cloudflare: Workers static assets recommended, decided in ADR 0007 | Free static hosting on a global CDN with a preview deploy per PR; the domain and email are already on Cloudflare | Serves the prerendered `build/client` folder |
+| Hosting | Cloudflare Workers static assets ([ADR 0007](../adr/0007-cloudflare-workers-hosting.md)) | Free static hosting on a global CDN with a preview per PR; the domain and email are already on Cloudflare | Serves the prerendered `build/client` folder |
 
 React Router v8 requires Node 22.22+, React 19.2.7+ and Vite 7 or newer ([release notes](https://remix.run/blog/react-router-v8)); the pinned versions satisfy all three.
 
