@@ -169,3 +169,16 @@ flowchart LR
 - All checks are required by the `main` ruleset, so production is only ever reached through a green pipeline ([ADR 0007](adr/0007-cloudflare-workers-hosting.md)).
 - Preview builds add a `noindex` robots tag so public preview URLs stay out of search results.
 - Secrets (`CLOUDFLARE_API_TOKEN`, `CLOUDFLARE_ACCOUNT_ID`) are only available to workflows from this repository, not to forks.
+
+## Testing
+
+CI runs each of the below tests on every pull request.
+
+| Layer | Tool | What it covers | Runs |
+| --- | --- | --- | --- |
+| Unit | Vitest | Pure logic: content schemas and the loader, store actions, camera math, the GPU tier choice, mapping `INT_` names to routes | Every PR, next to the code as `*.test.ts` |
+| End-to-end | Playwright | Every route loads with no console errors; the visitor journeys below; keyboard navigation of interactables; the 2D fallback when WebGL is unavailable | Every PR in Chromium; Firefox and WebKit on `main` |
+| Accessibility | axe in Playwright | WCAG 2.2 AA on every content page, in light and dark mode | Every PR |
+| Visual regression | Playwright screenshots | The canvas at fixed camera states, modes and weather; content pages in both themes | Every PR, from Phase 1 |
+| Assets | Budget validator | Names, UV maps, triangles, texture sizes and file size against the [budgets](art/asset-guidelines.md#budgets) | When the asset job builds |
+| Performance | Lighthouse CI | Content-page JavaScript under 120 KB, LCP and the mobile score from the [requirements](product/requirements.md#non-functional-requirements) | Every PR, from Phase 2 |
