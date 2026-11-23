@@ -69,24 +69,9 @@ The pipeline runs one way from Blender to the browser and is scripted from the s
 10. **Optimization:** gltf-transform dedupes, welds, meshopt-compresses geometry, resizes and converts textures to KTX2, then prints a size report.
 11. **Validation:** a script checks names, triangle count, texture sizes and file size against the budgets, and fails CI on a violation.
 
-### Pipeline conventions
+### Conventions and budgets
 
-- Naming: `GEO_` (render geometry), `INT_` (interactables), `COL_` (invisible click/collision proxies), `LGT_` (lights), `CAM_` (cameras).
-- Units and orientation: metres, glTF's +Y up, transforms applied before export.
-- Texture sizes: powers of two, 2048 px maximum for atlases, 512 px for props.
-- Source files live in `art/` under Git LFS. Exported GLBs are build artifacts and are never committed.
-
-### Starting asset budgets
-
-Revisited after the vertical slice.
-
-| Budget | Target | Hard limit |
-| --- | --- | --- |
-| Scene triangles | 50k | 150k |
-| Draw calls per frame | under 50 | 100 |
-| Texture memory (GPU) | 64 MB | 128 MB |
-| Compressed scene download | 3 MB | 6 MB |
-| Navigation interactables | 7 (one per section) | 12 |
+Naming, units, UVs, texture sizes, bakes, rigging, asset budgets and the export checklist are in the [asset guidelines](../art/asset-guidelines.md).
 
 ## Rendering and shader track
 
