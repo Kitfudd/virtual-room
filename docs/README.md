@@ -13,7 +13,7 @@ The documents and deliverables created for this project. Each item has a status/
 | [Asset guidelines](art/asset-guidelines.md) | File layout, naming, scene setup, geometry, UVs, textures, bakes, rigging, budgets, export checklist | 2026-11-22 |
 | [Workstation setup](setup.md) | Tooling, versions, reference devices, accounts | 2026-11-13 |
 | [Development plan](plan/development-plan.md) | Stack, asset pipeline, shader track, roadmap, practices, quality, risks | 2026-11-22 |
-| [Architecture](architecture.md) | System context, module boundaries, routes, runtime, state, content, asset and deployment pipelines | 2026-11-22 |
+| [Architecture](architecture.md) | System context, module boundaries, routes, runtime, state, content, asset and deployment pipelines, testing | 2026-11-22 |
 | [Architecture decision records](adr/README.md) | ADRs 0001–0007: the decisions behind the stack describing the context and consequences | 2026-11-21 |
 
 ## Conventions
