@@ -27,6 +27,7 @@ app/
   store/             Zustand stores
   scene/             R3F canvas, room, interactables, camera rig, the cat
   shaders/           GLSL (later TSL) materials and effects
+  styles/            Global stylesheet: design tokens and base styles
 content/             MDX by collection: projects/, devlog/, photos/, lab/, log/, pages/
 art/                 Blender and texture sources (Git LFS); art/reference/ is private and ignored
 tools/               Blender export script, gltf-transform and validator scripts

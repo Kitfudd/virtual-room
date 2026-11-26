@@ -15,3 +15,4 @@ Each significant technical decision is recorded here as a short ADR in the [Nyga
 | [0005](0005-zustand-and-gsap.md) | Zustand for shared state and GSAP for animation | Accepted |
 | [0006](0006-mdx-content-with-zod.md) | Content as MDX with Zod-validated frontmatter | Accepted |
 | [0007](0007-cloudflare-workers-hosting.md) | Cloudflare Workers static assets for hosting | Accepted |
+| [0008](0008-css-modules-and-design-tokens.md) | CSS Modules for components, CSS custom properties for design tokens | Accepted |
