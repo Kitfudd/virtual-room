@@ -2,7 +2,7 @@
 
 This project is a personal website presented as an interactive, isometric 3D model of my room. You can interact with the various objects scattered about the room to access different parts of my portfolio. Every page is also viewable through a traditional flat 2D site.
 
-> **Status:** Phase 0 (Discovery & Setup). Planning documents are in place, working on scaffolding the app next.
+> **Status:** Phase 0 (Discovery & Setup). The app is scaffolded, and next are the routes, room canvas, and CI.
 
 ## Stack
 
@@ -17,6 +17,7 @@ This project is a personal website presented as an interactive, isometric 3D mod
 | Art pipeline | Blender 5.2 LTS → scripted glTF export → gltf-transform (meshopt, KTX2) |
 | Tooling | Node 26 LTS, npm, ESLint, Prettier, Vitest, Playwright, GitHub Actions |
 | Hosting | Cloudflare |
+| Styling | CSS Modules and CSS custom properties |
 
 ## Documentation
 
@@ -29,7 +30,13 @@ The primary entry point for all documentation can be found at [`docs/README.md`]
 
 ## Getting started
 
-The application doesn't exist yet! To prepare a machine in the meantime, follow [`docs/setup.md`](docs/setup.md).
+Prepare the machine with [`docs/setup.md`](docs/setup.md) (Node 26 and npm 11 through fnm), then:
+
+```powershell
+npm ci          # installs based on package-lock.json specification
+npm run dev     # development server at http://localhost:5173
+npm run build
+```
 
 ## Repository layout
 
