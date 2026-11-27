@@ -1,6 +1,6 @@
 # Development plan
 
-**Last revised:** 2026-11-22 (living document).
+**Last revised:** 2026-11-27 (living document).
 
 ## Tech stack and architecture
 
@@ -40,7 +40,7 @@ The room canvas links to the content pages but does not contain them, so the sit
 | Animation | GSAP | Precise easing and timelines | Camera moves, object animations, UI transitions |
 | 3D modelling | [Blender 5.2 LTS](https://www.blender.org/releases/5-2/) | It's free and LTS gets fixes until July 2028 | Modelling, UVs, rigging, baking, scripted export |
 | Asset format | glTF 2.0 / GLB, processed with gltf-transform (meshopt, KTX2) | The web's standard runtime format | Generated into `public/models/` by the pipeline |
-| Debug and profiling | leva, r3f-perf, Spector.js, browser GPU tools | Live-tweak shader uniforms; count draw calls and memory | Dev-only panels |
+| Debug and profiling | leva, drei's `StatsGl`, a dev-only `renderer.info` readout, Spector.js, browser GPU tools | Live-tweak shader uniforms; count draw calls and memory | Dev-only panels |
 | Testing | Vitest, Playwright | Visual regression on the canvas | CI |
 | Package manager | npm | One less tool to install and keep in sync, as it comes automatically with Node | `package-lock.json` committed; `npm ci` in CI |
 | Hosting | Cloudflare Workers static assets ([ADR 0007](../adr/0007-cloudflare-workers-hosting.md)) | Free static hosting on a global CDN with a preview per PR; the domain and email are already on Cloudflare | Serves the prerendered `build/client` folder |
